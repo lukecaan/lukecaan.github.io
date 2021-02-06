@@ -1,0 +1,79 @@
+.ribbit {
+	position: relative;
+	background-color: #51e71d;
+	color: white;
+	height: 100%;
+
+	h1 {
+		font-family: "Fredoka One", georgia;
+		margin: 0;
+	}
+
+	a {
+		// text-decoration: none;
+		color: white;
+		position: absolute;
+		top: 12px;
+		// bottom: 12px;
+		// bottom: 0;
+		// left: 0;
+		right: 0;
+		// transform: translate(0,100%);
+		transform: translate(-10%, 0%);
+		font-family: "IBM Plex Mono", helvetica, sans-serif;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        z-index: 10;
+	}
+}
+
+.logoHolder {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	height: calc(222px * 0.3);
+	margin-right: 30px;
+}
+
+.textLogo {
+	font-size: 64px;
+}
+
+.splitter {
+	display: flex;
+	width: 100%;
+	height: 100%;
+
+	.splitLeft,
+	.splitRight {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5vw;
+	}
+
+	.splitLeft {
+		flex: 4;
+	}
+
+	.splitRight {
+		flex: 6;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+
+		.mockup {
+			position: absolute;
+			width: 80%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+		}
+	}
+}
