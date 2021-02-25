@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { createRef, useRef } from 'react';
 import Carousel from '../../Utility/PageWrapper/Carousel/Carousel';
 import { CarouselIndexButtons } from '../../Utility/PageWrapper/Carousel/CarouselTypes';
 import styles from "./IntroCarousel.module.scss";
 
 const IntroCarouselIndexButtons = (props: { buttons: { label: string }[] }): CarouselIndexButtons => (innerProps) => {
+    const indexDotRef = createRef<HTMLDivElement>();
+
+    const handleButtonClick = (index:number) => {
+        innerProps.onChange(index);
+
+        // if already on the target index, run pop animation
+        if (index === innerProps.selectedIndex) {
+            indexDotRef.current!.classList.add(styles.pop);
+
+            setTimeout(()=>{
+                indexDotRef.current!.classList.remove(styles.pop);
+            }, 70)
+        }
+    }
+
     return (
         <div>
             {props.buttons.map((button, index) => (
                 <button
                     className={`${styles.carouselIndexButton} ${innerProps.selectedIndex === index && styles.selected}`}
-                    onClick={() => { innerProps.onChange(index) }}
+                    onClick={() => handleButtonClick(index)}
                 >
                     {button.label}
                 </button>
             ))}
+
+            <div 
+                className={styles.indexDot}
+                style={{left: `${30*innerProps.selectedIndex + 12}px`}}
+                ref={indexDotRef}
+            />
         </div>
     )
 }
@@ -23,7 +44,7 @@ const IntroCarousel = () => {
     const buttonLabels = [
         { label: "1" },
         { label: "2" },
-        // { label: "3" },
+        { label: "3" },
         // { label: "4" },
         // { label: "5" },
     ]
@@ -121,7 +142,7 @@ const IntroCarousel = () => {
                     <li
                         className={`${styles.indented} ${styles.minor}`}
                     >
-                        24 months professionally responsible for my own greenfield project at Alkira. I approach problems using first principles (which is drilled into me from experience in undergrad physics). Usually natually fall into a leadership role when in a group of peers.
+                        24 months professionally responsible for my own greenfield project at Alkira. I approach problems using first principles (which is drilled into me from experience in undergrad physics).
                     </li>
                     <li
                     >
@@ -130,7 +151,7 @@ const IntroCarousel = () => {
                     <li
                         className={`${styles.indented} ${styles.minor}`}
                     >
-                        Confident and good at communicating with peers and superiors. Experience working in an Apple retail store in sales where building rapport and asking the right questions to make a good suggestion to the customer is paramount.
+                        Confident and good at communicating with peers and superiors. Experience working in an Apple retail store in sales where building rapport and asking the right questions is paramount.
                     </li>
                     <li
                     >
@@ -139,7 +160,43 @@ const IntroCarousel = () => {
                     <li
                         className={`${styles.indented} ${styles.minor}`}
                     >
-                        In love with lean principles. I've always wanted to start my own successful business, and I'm full of ideas. Generally full of ideas for features and pivots in academic and professional experience. My notes app has a $1.2T market cap.
+                        Infatuated with lean principles. I've always wanted to start my own successful business and I'm generally full of ideas for new products, features, and pivots.
+                    </li>
+                </ul>
+            </div>
+            
+            <div
+                className={styles.slide}
+            >
+                <h3>
+                    Interests
+                </h3>
+
+                <ul>
+                    <li
+                    >
+                        Blockchain Technology
+                    </li>
+                    <li
+                        className={`${styles.indented} ${styles.minor}`}
+                    >
+                        I think that blockchain technology is one of the most promising movements in terms of improving quality of life across the globe. I would love to be a part of it.
+                    </li>
+                    <li>
+                        Art
+                    </li>
+                    <li
+                        className={`${styles.indented} ${styles.minor}`}
+                    >
+                        I've always loved art, romanticism is my favourite style, I find cathedrals the most awe-inspiring. I am inspired by artists, architects and craftsmen that have dedicated their lives to creating things which have no purpose but to bring beauty into the world. I have found the digital art NFT space to be fascinating.
+                    </li>
+                    <li>
+                        Computer Science "stuff"
+                    </li>
+                    <li
+                        className={`${styles.indented} ${styles.minor}`}
+                    >
+                        Despite my heavy front-end professional experience, I do actually like to solve complex technical problems. Most of my favourite classes in university were the geeky ones like Algorithms &amp; Data Structures, Intro to AI, or low-level computing subjects doing things like building tetris on a breadboard programmed in C. I generally prefer to create a beautiful user experience on the front-end over develop a standard REST API, but I would love to sink my teeth into a real problem.
                     </li>
                 </ul>
             </div>

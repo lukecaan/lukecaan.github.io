@@ -28,9 +28,9 @@ const Home = () => {
                 <div className={styles.stripe}/>
             </div>
 
-            <button>
+            {/* <button>
                 Next
-            </button>
+            </button> */}
         </PageWrapper>
     );
 };

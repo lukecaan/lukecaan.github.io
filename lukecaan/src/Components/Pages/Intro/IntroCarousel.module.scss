@@ -8,6 +8,8 @@
 
     margin: 0 5px;
 
+	transition: background-color 100ms ease;
+
 	&:hover {
 		color: white;
 		background-color: black;
@@ -35,6 +37,7 @@
 
 		&.indented {
 			margin-left: 20px;
+			margin-bottom: 20px;
 		}
 
 		&:last-child {
@@ -83,4 +86,21 @@
 .skillName {
 	font-weight: bold;
 	margin-right: 10px;
+}
+
+.indexDot {
+	position: relative;
+	background-color: black;
+	width: 6px;
+	height: 6px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	top: 0px;
+
+	transition: left 250ms ease, top 70ms ease;
+
+	&.pop {
+		top: 10px;
+	}
 }

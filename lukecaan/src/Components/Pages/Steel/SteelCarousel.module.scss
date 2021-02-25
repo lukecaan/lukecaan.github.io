@@ -1,0 +1,37 @@
+.SteelCarousel {
+	height: 70vh;
+	width: 100%;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.steelPic {
+	height: 100%;
+}
+
+.carouselIndexButton {
+	border: 1px solid white;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+	font-family: "Roboto Mono", monospace;
+	padding: 4px 14px;
+	font-size: 16px;
+    margin: 0 10px;
+
+	&.selected {
+		color: black !important;
+		background-color: white !important;
+	}
+
+	&.notSelected {
+		&:hover {
+			background-color: #333;
+			cursor: pointer;
+		}
+	}
+}
