@@ -1,0 +1,68 @@
+.introPage {
+	* {
+		font-family: "montserrat";
+	}
+
+	font-weight: 300;
+
+	padding: 50px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	> * {
+		max-width: 1000px;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		font-family: "biryani";
+        text-transform: uppercase;
+		font-weight: 500;
+	}
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:active {
+            color:red;
+        }
+    }
+}
+
+.carouselTitle {
+    display: flex;    
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 30px;
+    background-color: black;
+    color:white;
+
+    h2 {
+        height: 34px;
+        
+        &:hover {
+            color:red;
+            cursor: default;
+        }
+    }
+
+    * {
+        margin: 0;
+    }
+}
+
+.introMessage {
+    // max-width: 600px;
+    font-size: 1.1em;
+    // text-align: center;
+}
+
+.dapper {
+    color: #8422e0;
+    font-weight: 800;
+}
