@@ -6,7 +6,7 @@ import RibbitLogo from "./RibbitLogo";
 const Ribbit = () => {
     return (
         <PageWrapper
-            className={`${styles.ribbit} snapScroll`}
+            className={`${styles.ribbit} snapScrollTop`}
         >
             <div className={styles.splitter}>
                 <div className={styles.splitLeft}>

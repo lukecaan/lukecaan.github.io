@@ -5,7 +5,7 @@ import styles from "./Home.module.scss";
 const Home = () => {
     return (
         <PageWrapper
-            className={`${styles.home} snapScroll`}
+            className={`${styles.home} snapScrollTop`}
         >
             <div className={styles.titleHolder}>
                 <h1>

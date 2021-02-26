@@ -50,6 +50,10 @@ section {
   scroll-snap-align: start;
 }
 
-.snapScroll {
+.snapScrollTop {
   scroll-snap-align: start;
+}
+
+.snapScrollBottom {
+  scroll-snap-align: end;
 }

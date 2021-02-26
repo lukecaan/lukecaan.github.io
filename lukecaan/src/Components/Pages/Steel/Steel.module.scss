@@ -2,8 +2,6 @@
     position: relative;
     background-color: black;
 
-    padding-bottom: 60px;
-
     font-family: "Roboto Mono", monospace;
     color:white;
 
@@ -43,6 +41,9 @@
     .splitRight {
         width: 40%;
         align-items: center;
+        position: sticky;
+        height: 100vh;
+        top:0;
     }
 
     .splitLeft, .splitRight {
@@ -95,4 +96,8 @@
     h2 {
         margin-top: 30px;
     }
+}
+
+.bottomSnap {
+    padding-bottom: 60px;
 }

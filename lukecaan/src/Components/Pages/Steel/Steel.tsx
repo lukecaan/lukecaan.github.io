@@ -7,7 +7,7 @@ import SteelCarousel from './SteelCarousel';
 const Steel = () => {
     return (
         <PageWrapper
-            className={`${styles.steel} snapScroll`}
+            className={`${styles.steel} snapScrollTop`}
             id="steel"
         >
             <div className={styles.splitter}>
@@ -43,6 +43,8 @@ const Steel = () => {
                     <SteelCarousel/>
                 </div>
             </div>
+
+            <div className={`${styles.bottomSnap} snapScrollBottom`} />
 
             {/* <button>
                 Next

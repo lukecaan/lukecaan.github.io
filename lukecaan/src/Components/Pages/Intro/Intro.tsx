@@ -6,7 +6,7 @@ import IntroCarousel from './IntroCarousel';
 const Intro = () => {
     return (
         <PageWrapper
-            className={`${styles.introPage} snapScroll`}
+            className={`${styles.introPage} snapScrollTop`}
         >
             <div
                 className={styles.introMessage}
@@ -26,7 +26,7 @@ const Intro = () => {
                     </p>
             </div>
 
-            <div className={`${styles.cvSection} snapScroll`}>
+            <div className={`${styles.cvSection} snapScrollTop`}>
                 <div className={styles.carouselTitle}>
                     <h1>Luke's (abridged) CV</h1>
                     <a
