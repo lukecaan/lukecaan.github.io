@@ -2,24 +2,27 @@
 	position: relative;
 	background-color: #51e71d;
 	color: white;
-	height: 100%;
+	min-height: 100%;
+
+	font-family: 'IBM Plex Mono', monospace;
 
 	h1 {
 		font-family: "Fredoka One", georgia;
-		margin: 0;
+		margin-top: 60px;
+		margin-bottom: 0;
 	}
 
 	a {
 		// text-decoration: none;
 		color: white;
-		position: absolute;
-		top: 12px;
+		// position: absolute;
+		// top: 12px;
 		// bottom: 12px;
 		// bottom: 0;
 		// left: 0;
-		right: 0;
+		// right: 0;
 		// transform: translate(0,100%);
-		transform: translate(-10%, 0%);
+		// transform: translate(-10%, 0%);
 		font-family: "IBM Plex Mono", helvetica, sans-serif;
 
         &:hover {
@@ -34,6 +37,11 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	margin-bottom: 30px;
+
+	h1 {
+		margin: 0;
+	}
 }
 
 .logo {
@@ -54,7 +62,6 @@
 	.splitRight {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		padding: 5vw;
 	}
 
@@ -64,16 +71,19 @@
 
 	.splitRight {
 		flex: 6;
-		position: relative;
 		justify-content: center;
 		align-items: center;
+		
+		position: sticky;;
+		height: 100vh;
+		top: 0;
 
 		.mockup {
-			position: absolute;
 			width: 80%;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -40%);
 		}
 	}
+}
+
+.info {
+	margin-top: 15px;
 }

@@ -7,16 +7,16 @@ import SteelCarousel from './SteelCarousel';
 const Steel = () => {
     return (
         <PageWrapper
-            className={styles.steel}
+            className={`${styles.steel} snapScroll`}
             id="steel"
         >
             <div className={styles.splitter}>
                 <div className={styles.splitLeft}>
                     <SteelWordMark className={styles.wordmark} />
                     <div
-                        className={styles.infoHolder}
+                        className={`${styles.infoHolder}`}
                     >
-                        <h1>The Product</h1>
+                        <h1 className="">The Product</h1>
                         
                         <div className={styles.info}>
                             Dedicated SMS authentication mobile app, uses a seperate secure SMS number for your two-factor authentication messages

@@ -75,10 +75,11 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 0.9em;
 
     .info {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     >* {
@@ -92,6 +93,6 @@
     }
 
     h2 {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 }

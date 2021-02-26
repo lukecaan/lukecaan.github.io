@@ -191,12 +191,12 @@ const IntroCarousel = () => {
                         I've always loved art, romanticism is my favourite style, I find cathedrals the most awe-inspiring. I am inspired by artists, architects and craftsmen that have dedicated their lives to creating things which have no purpose but to bring beauty into the world. I have found the digital art NFT space to be fascinating.
                     </li>
                     <li>
-                        Computer Science "stuff"
+                        Technical Challenges
                     </li>
                     <li
                         className={`${styles.indented} ${styles.minor}`}
                     >
-                        Despite my heavy front-end professional experience, I do actually like to solve complex technical problems. Most of my favourite classes in university were the geeky ones like Algorithms &amp; Data Structures, Intro to AI, or low-level computing subjects doing things like building tetris on a breadboard programmed in C. I generally prefer to create a beautiful user experience on the front-end over develop a standard REST API, but I would love to sink my teeth into a real problem.
+                        Despite my heavy front-end professional experience, I do actually like to solve complex technical problems. Most of my favourite classes in university were the geeky ones like Algorithms &amp; Data Structures, Intro to AI, or low-level computing subjects where we did things like build tetris on a breadboard programmed in C. In most companies, where the domain isn't very complex, I generally prefer to create a beautiful user experience rather than develop a standard REST API, but I would love to work for a company where I can sink my teeth into a real problem.
                     </li>
                 </ul>
             </div>

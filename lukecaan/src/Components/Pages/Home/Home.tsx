@@ -5,32 +5,32 @@ import styles from "./Home.module.scss";
 const Home = () => {
     return (
         <PageWrapper
-            className={styles.home}
+            className={`${styles.home} snapScroll`}
         >
             <div className={styles.titleHolder}>
                 <h1>
                     Luke Steyn
-                </h1>
+                    </h1>
                 <span className={styles.volume}>
                     Vol. 1
-                </span>
+                    </span>
                 <div
                     className={styles.caption}
                 >
                     (a portfolio)
-                </div>
+                    </div>
             </div>
 
 
             <div className={styles.stripes}>
-                <div className={styles.stripe}/>
-                <div className={styles.stripe}/>
-                <div className={styles.stripe}/>
+                <div className={styles.stripe} />
+                <div className={styles.stripe} />
+                <div className={styles.stripe} />
             </div>
 
             {/* <button>
-                Next
-            </button> */}
+                    Next
+                </button> */}
         </PageWrapper>
     );
 };

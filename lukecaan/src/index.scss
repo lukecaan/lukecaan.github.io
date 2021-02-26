@@ -45,3 +45,11 @@ button {
   outline: none;
   box-sizing: border-box;
 }
+
+section {
+  scroll-snap-align: start;
+}
+
+.snapScroll {
+  scroll-snap-align: start;
+}
