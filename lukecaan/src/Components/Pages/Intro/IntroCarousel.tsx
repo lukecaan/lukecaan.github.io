@@ -1,6 +1,6 @@
 import React, { createRef, useRef } from 'react';
-import Carousel from '../../Utility/PageWrapper/Carousel/Carousel';
-import { CarouselIndexButtons } from '../../Utility/PageWrapper/Carousel/CarouselTypes';
+import Carousel from '../../Utility/Carousel/Carousel';
+import { CarouselIndexButtons } from '../../Utility/Carousel/CarouselTypes';
 import styles from "./IntroCarousel.module.scss";
 
 const IntroCarouselIndexButtons = (props: { buttons: { label: string }[] }): CarouselIndexButtons => (innerProps) => {
@@ -45,8 +45,6 @@ const IntroCarousel = () => {
         { label: "1" },
         { label: "2" },
         { label: "3" },
-        // { label: "4" },
-        // { label: "5" },
     ]
 
     return (
@@ -59,10 +57,6 @@ const IntroCarousel = () => {
                 className={styles.slide}
             >
                 <h3>Technical Skills and Experience</h3>
-
-                {/* <p>
-                    The majority of my professional experience was gained during the 30 Months I spent at Alkira, which is a small software startup in Queensland, Australia. Alkira. Alkira was the first job I got out of university, where I quickly earned the trust of the founder (and CTO) of the company, and was majorly influential in the pivot which helped to save the company just 6 months into my job. After a brief hiatus, when I moved to another city, I started to work at Alkira again for the following 24 months remotely. During these 24 months I was responsible for building my own greenfield project, a large single page React application.
-                </p> */}
 
                 <div
                     className={styles.splitter}

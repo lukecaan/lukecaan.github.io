@@ -7,11 +7,6 @@ const RibbitLogo = (props : {
     small?:boolean,
     xsmall?:boolean,
 }) => {
-    // const heightOrig = 222;
-    // const widthOrig = 265;
-
-    // const scale = 0.3;
-
 
     return (
         <svg className={`${props.className ?? ""} ${styles.logo} ${props.bounce && styles.bounce} ${props.small && styles.small} ${props.xsmall && styles.xsmall}`} viewBox="0 0 262 225" fill="none" xmlns="http://www.w3.org/2000/svg">

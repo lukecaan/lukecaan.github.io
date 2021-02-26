@@ -4,25 +4,6 @@
 
     font-family: "Roboto Mono", monospace;
     color:white;
-
-    // button {
-    // position: absolute;
-    // bottom: var(--xsmall);
-    // left: 50%;
-    // transform: translateX(-50%);
-    // border: 1px solid white;
-    // border-radius: 5px;
-    // background-color:black;
-    // color: white;
-    // font-family: "Roboto Mono", monospace;
-    // padding: 6px 16px;
-    // font-size: 16px;
-
-    //     &:hover {
-    //         cursor: pointer;
-    //         background-color: #ffffff33;
-    //     }
-    // }
 }
 
 .splitter {
@@ -52,20 +33,6 @@
         justify-content: center;
         padding: 5vw;
     }
-
-    // .splitRight {
-    //     position: relative;
-    //     justify-content: center;
-    //     align-items: center;
-        
-    //     .preview {
-    //         position: absolute;
-    //         width: 80%;
-    //         top: 50%;
-    //         left: 50%;
-    //         transform: translate(-50%,-40%);
-    //     }
-    // }
 }
 
 .wordmark {

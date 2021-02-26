@@ -1,6 +1,6 @@
 import React from 'react';
-import Carousel from '../../Utility/PageWrapper/Carousel/Carousel';
-import { CarouselIndexButtons } from '../../Utility/PageWrapper/Carousel/CarouselTypes';
+import Carousel from '../../Utility/Carousel/Carousel';
+import { CarouselIndexButtons } from '../../Utility/Carousel/CarouselTypes';
 import styles from "./SteelCarousel.module.scss";
 
 const SteelCarouselIndexButtons = (props: { buttons: { label: string }[] }): CarouselIndexButtons => (innerProps) => {

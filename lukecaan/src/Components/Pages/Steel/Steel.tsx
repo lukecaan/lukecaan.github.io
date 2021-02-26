@@ -46,9 +46,6 @@ const Steel = () => {
 
             <div className={`${styles.bottomSnap} snapScrollBottom`} />
 
-            {/* <button>
-                Next
-            </button> */}
         </PageWrapper>
     );
 };
