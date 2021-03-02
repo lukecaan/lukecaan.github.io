@@ -33,7 +33,7 @@ const Steel = () => {
 
                         <h2>Description</h2>
                         <div>
-                            This was my first attempt at a startup. I thought of it when I first got interested in cryptocurrencies, and realised there was a problem with SMS authentication, which lots of people still use, being really insecure due to SIM Hacking. I started building this app as a side-projecet, hoping it would be able to provide me some income. I completed the app and even release it the app store with subscribtions and billing enabled. It didn't get as much traction as I'd hoped so I canned it, but it was still a great learning experience, and I'm proud of the fact I built a working app that solved a genuine problem in the world - even if it's not a problem that enough people cared enough to pay for.
+                            This was my first attempt at a startup. I thought of it when I first got interested in cryptocurrencies and realised there was a problem with SMS authentication, which lots of people still use, being quite insecure due to SIM Hacking. I started building this app as a side-project, hoping it would be able to provide me some passive income. I completed the app and even released it to the app store with subscribtions and billing enabled. It didn't get as much traction as I'd hoped so I canned it, but it was still a great learning experience and I'm proud of the fact I built a working app that solved a genuine problem that real life people were facing.
                         </div>
                     </div>
 
