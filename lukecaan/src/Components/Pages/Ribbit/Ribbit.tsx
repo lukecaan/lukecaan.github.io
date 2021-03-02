@@ -22,6 +22,8 @@ const Ribbit = () => {
 
                     <a
                         href="https://ribbit.menu"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
                         ribbit.menu
                     </a>
